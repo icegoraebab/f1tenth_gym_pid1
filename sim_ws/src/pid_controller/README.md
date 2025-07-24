@@ -42,8 +42,7 @@ pip3 install gym pygame
 📥 설치 및 빌드
 1. 워크스페이스 생성 & 패키지 클론
 bash
-복사
-편집
+
 mkdir -p ~/f1tenth_ws/src && cd ~/f1tenth_ws/src
 git clone https://github.com/f1tenth/f1tenth_gym_ros.git
 2. 종속성 이슈 해결
@@ -122,112 +121,10 @@ ros2 launch f1tenth_gym_ros gym_bridge_launch.py
 2	PID 속도 제어기 실행	ros2 run pid_controller pid_speed_control -p kp:=1.0 -p ki:=0.1 -p kd:=0.01 -p wheelbase:=0.325
 3	키보드 텔레옵 (수동 조작)	ros2 run teleop_twist_keyboard teleop_twist_keyboard
 
-📝 PID & Ackermann
-PID 제어
 
-𝑢
-(
-𝑡
-)
-=
-𝐾
-𝑝
- 
-𝑒
-(
-𝑡
-)
-+
-𝐾
-𝑖
- ⁣
-∫
-𝑒
-(
-𝑡
-)
- 
-𝑑
-𝑡
-+
-𝐾
-𝑑
-𝑑
-𝑒
-(
-𝑡
-)
-𝑑
-𝑡
-,
-𝑒
-(
-𝑡
-)
-=
-𝑣
-c
-m
-d
-−
-𝑣
-a
-c
-t
-u
-a
-l
-u(t)=K 
-p
-​
- e(t)+K 
-i
-​
- ∫e(t)dt+K 
-d
-​
-  
-dt
-de(t)
-​
- ,e(t)=v 
-cmd
-​
- −v 
-actual
-​
- 
-Ackermann 조향
 
-𝜃
-=
-arctan
-⁡
-(
-𝐿
- 
-𝜔
-𝑣
-)
-,
-𝐿
-=
-wheelbase
-,
-  
-𝜔
-=
-angular.z
-,
-  
-𝑣
-=
-linear.x
-θ=arctan( 
-v
-Lω
-​
- ),L=wheelbase,ω=angular.z,v=linear.x
+
+
 🎮 키보드 단축키
 yaml
 복사
