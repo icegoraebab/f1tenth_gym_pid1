@@ -155,5 +155,9 @@ e/c : angular speed ±10%
 
 
 
+# 참조문헌 
+
+https://github.com/f1tenth/f1tenth_gym_ros
+
 📄 라이선스
 MIT © 2025 icegoraebab
