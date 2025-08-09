@@ -119,6 +119,14 @@ ros2 launch f1tenth_gym_ros gym_bridge_launch.py
 터미널 구성 (최소 3개)
 터미널	역할	명령어 예제
 
+
+공통입력
+```
+source /opt/ros/foxy/setup.bash
+source ~/sim_ws/install/local_setup.bash
+```
+
+
 1	시뮬레이션 + RViz	
 ```
 ros2 launch f1tenth_gym_ros gym_bridge_launch.py
